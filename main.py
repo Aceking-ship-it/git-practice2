@@ -13,3 +13,19 @@ print(f"총 {len(properties)}대의 매물이 있습니다.")
 # 각 매물 출력
 for p in properties:
     print(f"{p['지역']} {p['유형']} {p['거래']} {p['가격']} {p['연도']}")
+
+
+import os
+print(os.getcwd())
+
+folder = "sample_dir"
+
+if os.path.exists(folder):
+    print("이미 존재하는 폴더 입니다.")
+    os.rmdir(folder)
+    print(folder, "폴더를 삭제하였습니다.")
+else:
+    os.makedirs(folder)
+    print(folder, "폴더는 생성하였습니다.")
+
+print(os.listdir)
